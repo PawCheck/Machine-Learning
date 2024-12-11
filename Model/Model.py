@@ -7,12 +7,11 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras import regularizers, models, layers
 from tensorflow.keras.optimizers import Adam
 
-# Menggunakan ImageDataGenerator untuk preprocessing
+# Using ImageDataGenerator for preprocessing
 train_datagen = ImageDataGenerator(rescale=1./255, rotation_range=20, horizontal_flip=True)
 valid_datagen = ImageDataGenerator(rescale=1./255, horizontal_flip=True)
 test_datagen = ImageDataGenerator(rescale=1./255)
 
-# Pastikan label Anda berupa angka, gunakan 'class_mode' yang sesuai
 train_dataset = train_datagen.flow_from_directory(
     r'D:\Documents\KULIAH\Semester 5\Studi Independen\Project Capstone\Project\Data\Data_Preprocessed\train', 
     target_size=(224, 224),
@@ -75,7 +74,6 @@ model.compile(optimizer=optimizer,
               metrics=['accuracy'])
 
 class EarlyStoppingCallback(tf.keras.callbacks.Callback):
-
     def on_epoch_end(self, epoch, logs=None):
         # Check if the accuracy is greater or equal to 0.95 and validation accuracy is greater or equal to 0.95
         train_accuracy = logs.get('accuracy')  # Get training accuracy from logs

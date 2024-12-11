@@ -47,26 +47,23 @@ The machine learning model is trained using a custom dataset of labeled images o
 3. Training: The model is trained using the prepared dataset, with hyperparameter tuning to optimize performance.
 4. Evaluation: Accuracy and loss are evaluated during training and validation phases to ensure the model is generalizing well to unseen data.
 
-## Installation
+## Machine Learning Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/pawcheck.git
+   git clone https://github.com/your-username/Machine-Learning.git
 2. Navigate to the project directory:
    ```bash
    cd pawcheck
-3. Set up the Android development environment:
-    * Install Android Studio
-    * Ensure you have the required SDKs and dependencies installed as per the Android development guidelines.
-4. Install the necessary Python dependencies for training the model:
+3. Install the necessary Python dependencies for training the model:
    pip install -r requirements.txt
-5. Prepare your dataset by following the instructions in the data/ folder to format and label images properly.
-6. Train the custom machine learning model using TensorFlow:
+4. Prepare your dataset by following the instructions in the data/ folder to format and label images properly.
+5. Train the custom machine learning model using TensorFlow:
    * Navigate to the model/ directory.
    * Run the script to train the model:
       ```bash
       python Model.py
-7. Save the model to h5 for API.
-8. Convert the model to TensorFlow Lite for mobile app integration.
+6. Save the model to h5 for API.
+7. Convert the model to TensorFlow Lite for mobile app integration.
 <br>
 
 

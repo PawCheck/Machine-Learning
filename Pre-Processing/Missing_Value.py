@@ -21,7 +21,7 @@ for folder in folders:
     csv_file_path = os.path.join(base_path, folder, '_annotations.csv')
     data = pd.read_csv(csv_file_path)
 
-    # Menghapus baris duplikat berdasarkan kolom 'filename'
+    # Remove duplicate rows based on 'filename' column
     data = data.drop_duplicates(subset='filename', keep='first').reset_index(drop=True)
 
     # Get the list of image filenames from the CSV

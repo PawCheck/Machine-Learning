@@ -17,11 +17,6 @@ In Indonesia, eye disorders rank among the top health concerns affecting dogs, w
 - **User-friendly interface**: Simple navigation for easy use by dog owners with no technical background.
 - **Offline support**: Access to the app is available even without an internet connection.
 
-## Requirements
-- **Android device** (version 6.0 or higher)
-- **Internet connection** for uploading photos and receiving recommendations
-- **Firebase** account for cloud storage and app management
-
 ## Usage
 1. Launch the app on your Android device.
 2. Upload or take a picture of your dog's eyes.
